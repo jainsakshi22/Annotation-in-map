@@ -15,6 +15,12 @@
 		5319CA911AADDE1500003FD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5319CA901AADDE1500003FD5 /* Images.xcassets */; };
 		5319CA941AADDE1500003FD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5319CA921AADDE1500003FD5 /* LaunchScreen.xib */; };
 		5319CAA01AADDE1500003FD5 /* MapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5319CA9F1AADDE1500003FD5 /* MapTests.m */; };
+		5319CAAA1AADDE3C00003FD5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5319CAA91AADDE3C00003FD5 /* MapKit.framework */; };
+		53DEF4941AB052310031D3C9 /* MyCustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DEF4931AB052310031D3C9 /* MyCustomAnnotation.m */; };
+		53DEF4961AB058CC0031D3C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DEF4951AB058CC0031D3C9 /* CoreLocation.framework */; };
+		53DEF4981AB058D20031D3C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DEF4971AB058D20031D3C9 /* UIKit.framework */; };
+		53DEF49A1AB058DA0031D3C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DEF4991AB058DA0031D3C9 /* Foundation.framework */; };
+		53DEF49C1AB058E00031D3C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DEF49B1AB058E00031D3C9 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,13 @@
 		5319CA991AADDE1500003FD5 /* MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5319CA9E1AADDE1500003FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5319CA9F1AADDE1500003FD5 /* MapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapTests.m; sourceTree = "<group>"; };
+		5319CAA91AADDE3C00003FD5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		53DEF4921AB052310031D3C9 /* MyCustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomAnnotation.h; sourceTree = "<group>"; };
+		53DEF4931AB052310031D3C9 /* MyCustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomAnnotation.m; sourceTree = "<group>"; };
+		53DEF4951AB058CC0031D3C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		53DEF4971AB058D20031D3C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		53DEF4991AB058DA0031D3C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		53DEF49B1AB058E00031D3C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +62,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53DEF49C1AB058E00031D3C9 /* CoreGraphics.framework in Frameworks */,
+				53DEF49A1AB058DA0031D3C9 /* Foundation.framework in Frameworks */,
+				53DEF4981AB058D20031D3C9 /* UIKit.framework in Frameworks */,
+				53DEF4961AB058CC0031D3C9 /* CoreLocation.framework in Frameworks */,
+				5319CAAA1AADDE3C00003FD5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 		5319CA741AADDE1500003FD5 = {
 			isa = PBXGroup;
 			children = (
+				53DEF49D1AB059530031D3C9 /* Frameworks */,
 				5319CA7F1AADDE1500003FD5 /* Map */,
 				5319CA9C1AADDE1500003FD5 /* MapTests */,
 				5319CA7E1AADDE1500003FD5 /* Products */,
@@ -87,6 +106,8 @@
 				5319CA851AADDE1500003FD5 /* AppDelegate.m */,
 				5319CA8A1AADDE1500003FD5 /* ViewController.h */,
 				5319CA8B1AADDE1500003FD5 /* ViewController.m */,
+				53DEF4921AB052310031D3C9 /* MyCustomAnnotation.h */,
+				53DEF4931AB052310031D3C9 /* MyCustomAnnotation.m */,
 				5319CA8D1AADDE1500003FD5 /* Main.storyboard */,
 				5319CA901AADDE1500003FD5 /* Images.xcassets */,
 				5319CA921AADDE1500003FD5 /* LaunchScreen.xib */,
@@ -120,6 +141,18 @@
 				5319CA9E1AADDE1500003FD5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53DEF49D1AB059530031D3C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53DEF49B1AB058E00031D3C9 /* CoreGraphics.framework */,
+				53DEF4991AB058DA0031D3C9 /* Foundation.framework */,
+				53DEF4971AB058D20031D3C9 /* UIKit.framework */,
+				53DEF4951AB058CC0031D3C9 /* CoreLocation.framework */,
+				5319CAA91AADDE3C00003FD5 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +204,11 @@
 				TargetAttributes = {
 					5319CA7C1AADDE1500003FD5 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					5319CA981AADDE1500003FD5 = {
 						CreatedOnToolsVersion = 6.1;
@@ -226,6 +264,7 @@
 				5319CA831AADDE1500003FD5 /* main.m in Sources */,
 				5319CA8C1AADDE1500003FD5 /* ViewController.m in Sources */,
 				5319CA891AADDE1500003FD5 /* Map.xcdatamodeld in Sources */,
+				53DEF4941AB052310031D3C9 /* MyCustomAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +455,7 @@
 				5319CAA51AADDE1500003FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5319CAA61AADDE1500003FD5 /* Build configuration list for PBXNativeTarget "MapTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +464,7 @@
 				5319CAA81AADDE1500003FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

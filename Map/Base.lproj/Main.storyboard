@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pUQ-rK-5Rx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,75 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GKY-nc-MJQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GKY-nc-MJQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="20G-Ie-ihc"/>
+                            <constraint firstAttribute="trailing" secondItem="GKY-nc-MJQ" secondAttribute="trailing" id="H6g-Vj-kKE"/>
+                            <constraint firstItem="GKY-nc-MJQ" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="gEx-06-T5j"/>
+                            <constraint firstItem="GKY-nc-MJQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="vxs-Ow-aFI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="GKY-nc-MJQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="20G-Ie-ihc"/>
+                                <exclude reference="H6g-Vj-kKE"/>
+                                <exclude reference="gEx-06-T5j"/>
+                                <exclude reference="vxs-Ow-aFI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="GKY-nc-MJQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="20G-Ie-ihc"/>
+                                <include reference="H6g-Vj-kKE"/>
+                                <include reference="gEx-06-T5j"/>
+                                <include reference="vxs-Ow-aFI"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Find Location" id="PsU-6q-JMh">
+                            <connections>
+                                <action selector="findLocationPressed:" destination="vXZ-lx-hvc" id="h3o-2O-YZD"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="uCD-Rj-z5i"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="GKY-nc-MJQ" id="c1c-Go-WcT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1018.5" y="985.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4b4-St-j0a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pUQ-rK-5Rx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iIf-Wd-wbH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="fp7-4C-mtu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HD6-LT-AtZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="986"/>
         </scene>
     </scenes>
 </document>

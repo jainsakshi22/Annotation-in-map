@@ -11,5 +11,7 @@
 @interface ViewController : UIViewController
 
 
+- (IBAction)findLocationPressed:(id)sender;
+
 @end
 
